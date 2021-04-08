@@ -31,11 +31,17 @@ public class MainRun2 {
         String resultado3 = liLeafTag2.toHtml();
         System.out.println(resultado3);
 
+        LiLeafTag liLeafTag3 = new LiLeafTag();
+        liLeafTag3.texto("Soda");
+        String resultado4 = liLeafTag3.toHtml();
+        System.out.println(resultado4);
+
 
         UlCompositeTag ulCompositeTag = new UlCompositeTag();
         ulCompositeTag.addTag(liLeafTag);
         ulCompositeTag.addTag(liLeafTag1);
         ulCompositeTag.addTag(liLeafTag2);
+        ulCompositeTag.addTag(liLeafTag3);
         System.out.println(ulCompositeTag.toHtml());
     }
 
